@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2494a199"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/my_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cc99ff"
+        android:gravity="center_vertical"
+        android:text="    我的"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/my_scrollView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/my_scrollView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_textView1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/my_textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:text="SXw "
+                    android:background="#ffffff"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="100sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/my_head"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="头像"
+                    android:background="@drawable/head_sculpture"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/my_textView2" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/my_button1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  阅读时长"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  书签"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  画线"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  批注"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  购物车"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  已购买"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  我的标记"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button8"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  我的余额"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button9"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  我的礼券"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button10"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  我的打赏"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button11"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  我的作品"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button12"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  我的日记"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button13"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  已贡献书籍"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button14"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  导入本地图书"
+                android:textColor="@drawable/click_word_a" />
+
+            <TextView
+                android:id="@+id/my_button15"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cheek_purple"
+                android:gravity="center_vertical"
+                android:text="  设置"
+                android:textColor="@drawable/click_word_a" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

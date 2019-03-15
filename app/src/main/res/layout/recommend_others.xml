@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2494a199"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/other_button1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangular_borde"
+                android:text="中文名著"
+                android:textColor="#ab55ff"
+                app:layout_constraintEnd_toStartOf="@+id/other_button2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/other_button2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangular_borde"
+                android:text="外语名著"
+                android:textColor="#ab55ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/other_button1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/other_button4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="未分类"
+                android:background="@drawable/rectangular_borde"
+                android:textColor="#ab55ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/other_button3"
+                app:layout_constraintTop_toBottomOf="@+id/other_button2" />
+
+            <Button
+                android:id="@+id/other_button3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="人物传记"
+                android:background="@drawable/rectangular_borde"
+                android:textColor="#ab55ff"
+                app:layout_constraintEnd_toStartOf="@+id/other_button4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other_button1" />
+
+            <TextView
+                android:id="@+id/book_textView1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="#ead5ff"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other_button3" />
+
+            <TextView
+                android:id="@+id/book_textView2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView1" />
+
+            <TextView
+                android:id="@+id/book_textView3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView2" />
+
+            <TextView
+                android:id="@+id/book_textView4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView3" />
+
+            <TextView
+                android:id="@+id/book_textView5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView4" />
+
+            <TextView
+                android:id="@+id/book_textView6"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView5" />
+
+            <TextView
+                android:id="@+id/book_textView7"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView6" />
+
+            <TextView
+                android:id="@+id/book_textView8"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView7" />
+
+            <TextView
+                android:id="@+id/book_textView9"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView8" />
+
+            <TextView
+                android:id="@+id/book_textView10"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView9" />
+
+            <TextView
+                android:id="@+id/book_textView11"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView10" />
+
+            <TextView
+                android:id="@+id/book_textView12"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView11" />
+
+            <TextView
+                android:id="@+id/book_textView13"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:text="TextView"
+                android:background="#ead5ff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_textView12" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

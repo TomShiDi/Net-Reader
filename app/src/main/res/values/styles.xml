@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:typeface">sans</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="AppTheme.Main" parent="AppTheme" />
+
+    <!--<style name="ContentImageBadgeTitle" parent="AppTheme">-->
+        <!--<item name="android:alpha">0.5</item>-->
+        <!--<item name="android:textColor">@android:color/white</item>-->
+        <!--<item name="android:textSize">12dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="ContentImageBadgeText" parent="AppTheme">-->
+        <!--<item name="android:textColor">@android:color/white</item>-->
+        <!--<item name="android:textSize">20dp</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="ContentMainBadgeTitle" parent="AppTheme">-->
+        <!--<item name="android:textColor">@color/contentBadgeTitle</item>-->
+        <!--<item name="android:textSize">12dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="TitleBadgeText" parent="AppTheme">-->
+        <!--<item name="android:textColor">@color/titleBadgeText</item>-->
+        <!--<item name="android:textSize">20dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="TitleBadgeTitle" parent="AppTheme">-->
+        <!--<item name="android:textColor">@color/titleBadgeTitle</item>-->
+        <!--<item name="android:textSize">12dp</item>-->
+    <!--</style>-->
+    
+    <style name="WindowPop">
+        <item name="android:windowEnterAnimation">@anim/window_out</item>
+        <item name="android:windowExitAnimation">@anim/window_back</item>
+    </style>
+
+</resources>

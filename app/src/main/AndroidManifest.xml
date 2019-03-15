@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.administrator.huaqin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".LocalReadActivity" />
+        <activity android:name=".PageFlipActivity" />
+        <activity android:name=".FileListActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".anotherLayout.AnotherMainActivity" />
+        <activity android:name=".anotherLayout.Book_1" />
+        <activity android:name=".anotherLayout.My_drbdts" />
+        <activity android:name=".anotherLayout.My_gwc" />
+        <activity android:name=".anotherLayout.My_hx" />
+        <activity android:name=".anotherLayout.My_pz" />
+        <activity android:name=".anotherLayout.My_sq" />
+        <activity android:name=".anotherLayout.My_sz" />
+        <activity android:name=".anotherLayout.My_wdbj" />
+        <activity android:name=".anotherLayout.My_wdds" />
+        <activity android:name=".anotherLayout.My_wdlq" />
+        <activity android:name=".anotherLayout.My_wdrj" />
+        <activity android:name=".anotherLayout.My_wdye" />
+        <activity android:name=".anotherLayout.My_wdzp" />
+        <activity android:name=".anotherLayout.My_ydsc" />
+        <activity android:name=".anotherLayout.My_ygm" />
+        <activity android:name=".anotherLayout.My_ygxsj" />
+        <activity android:name=".anotherLayout.Search" />
+    </application>
+
+</manifest>

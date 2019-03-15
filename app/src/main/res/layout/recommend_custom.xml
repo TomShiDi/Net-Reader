@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ead5ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Viewpager:全类名导入 -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/custom_viewpager"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/text_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@id/text_view_1"
+                >
+
+                <TextView
+                    android:id="@+id/book_textView1"
+                    android:layout_width="70dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/list"
+                    android:gravity="center"
+                    android:text=">>幻想"
+                    app:layout_constraintStart_toStartOf="parent"
+                     />
+
+            </RelativeLayout>
+
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+                android:layout_below="@id/relativeLayout_1"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+                android:layout_below="@id/folding_cell_1"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+                android:layout_below="@id/folding_cell_2"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@id/folding_cell_3"
+            >
+            <TextView
+                android:id="@+id/book_textView7"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list"
+                android:gravity="center"
+                android:text=">>文艺"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </RelativeLayout>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+                android:layout_below="@id/relativeLayout_2"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+                android:layout_below="@id/folding_cell_4"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_6"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+                android:layout_below="@id/folding_cell_5"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@id/folding_cell_6"
+            >
+            <TextView
+                android:id="@+id/book_textView13"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list"
+                android:gravity="center"
+                android:text=">>其它"
+                app:layout_constraintStart_toStartOf="parent"
+                 />
+        </RelativeLayout>
+
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_7"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+
+                android:layout_below="@id/folding_cell_6"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_8"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+
+                android:layout_below="@id/folding_cell_7"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                android:id="@+id/folding_cell_9"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+                folding-cell:additionalFlipsCount="2"
+                folding-cell:animationDuration="1300"
+                folding-cell:backSideColor="@color/bgBackSideColor"
+                folding-cell:cameraHeight="30"
+
+                android:layout_below="@id/folding_cell_8"
+                >
+                <include layout="@layout/cell_content_layout" />
+
+                <include layout="@layout/cell_title_layout" />
+
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
